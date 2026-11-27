@@ -19,17 +19,26 @@
     <span>View:</span>
     <div class="toggle-pill">
         <button id="btn-expanded" onclick="window.location.href='index.html'">Expanded</button>
-        <button id="btn-condensed" class="active" onclick="window.location.href='condensed.html'">Condensed using AI</button>
+        <button id="btn-condensed" class="active" onclick="window.location.href='condensed.html'">In Context</button>
     </div>
     <a href="help.html" style="margin-left:1em;">Help</a>
 </div>
 
 <h1>BB2026</h1>
 
+<p>King James Version (KJV)</p>
+<details class="view-guide">
+<summary>About the two views</summary>
+<ul>
+<li><b>Expanded</b> - the full view. Each category page lists every matching word in the book, one row per word, with the verses that contain it.</li>
+<li><b>In Context</b> - made mainly for the numbers and times categories. It turns number words into figures and lists the largest first, and it pulls in a little of the surrounding words for context. It was applied to every category, but numbers is where it really helps. Like Expanded, it groups the material by verse: each row is one verse (or group of verses) with the words from that category that appear in it.</li>
+</ul>
+</details>
+
 <div class="w3-container">
-<h2>Individual Books</h2>
+<h2>Individual Books <span class="w3-tooltip tip-icon" tabindex="0" aria-label="Tip: tap a book to see its categories">&#9432;<span class="w3-text tip-text">Tap a book to see its categories.</span></span></h2>
 <div class="w3-accordion w3-light-grey">
-<button onclick="myFunction('2 Samuel')" class="w3-btn-block w3-left-align">2 Samuel</button>
+<button onclick="myFunction('2 Samuel')" class="w3-btn-block w3-left-align book-btn" title="Tap to see the categories"><span class="book-name">2 Samuel</span><span class="book-count">695 verses</span></button>
 <div id="2 Samuel" class="w3-accordion-content">
 <a href="condensed/2%20Samuel/_book.html">2 Samuel</a>
 <a class="animals" href="condensed/2%20Samuel/animals.html">animals</a>
@@ -50,7 +59,7 @@
 <a class="weapons" href="condensed/2%20Samuel/weapons.html">weapons</a>
 <a class="which" href="condensed/2%20Samuel/which.html">which</a>
 </div>
-<button onclick="myFunction('Acts')" class="w3-btn-block w3-left-align">Acts</button>
+<button onclick="myFunction('Acts')" class="w3-btn-block w3-left-align book-btn" title="Tap to see the categories"><span class="book-name">Acts</span><span class="book-count">1007 verses</span></button>
 <div id="Acts" class="w3-accordion-content">
 <a href="condensed/Acts/_book.html">Acts</a>
 <a class="animals" href="condensed/Acts/animals.html">animals</a>
@@ -71,7 +80,7 @@
 <a class="weapons" href="condensed/Acts/weapons.html">weapons</a>
 <a class="which" href="condensed/Acts/which.html">which</a>
 </div>
-<button onclick="myFunction('Isaiah 1-33')" class="w3-btn-block w3-left-align">Isaiah 1-33</button>
+<button onclick="myFunction('Isaiah 1-33')" class="w3-btn-block w3-left-align book-btn" title="Tap to see the categories"><span class="book-name">Isaiah 1-33</span><span class="book-count">649 verses</span></button>
 <div id="Isaiah 1-33" class="w3-accordion-content">
 <a href="condensed/Isaiah%201-33/_book.html">Isaiah 1-33</a>
 <a class="animals" href="condensed/Isaiah%201-33/animals.html">animals</a>
@@ -92,7 +101,7 @@
 <a class="weapons" href="condensed/Isaiah%201-33/weapons.html">weapons</a>
 <a class="which" href="condensed/Isaiah%201-33/which.html">which</a>
 </div>
-<button onclick="myFunction('Titus')" class="w3-btn-block w3-left-align">Titus</button>
+<button onclick="myFunction('Titus')" class="w3-btn-block w3-left-align book-btn" title="Tap to see the categories"><span class="book-name">Titus</span><span class="book-count">46 verses</span></button>
 <div id="Titus" class="w3-accordion-content">
 <a href="condensed/Titus/_book.html">Titus</a>
 <a class="animals" href="condensed/Titus/animals.html">animals</a>
@@ -113,7 +122,7 @@
 <a class="weapons" href="condensed/Titus/weapons.html">weapons</a>
 <a class="which" href="condensed/Titus/which.html">which</a>
 </div>
-<button onclick="myFunction('Haggai')" class="w3-btn-block w3-left-align">Haggai</button>
+<button onclick="myFunction('Haggai')" class="w3-btn-block w3-left-align book-btn" title="Tap to see the categories"><span class="book-name">Haggai</span><span class="book-count">38 verses</span></button>
 <div id="Haggai" class="w3-accordion-content">
 <a href="condensed/Haggai/_book.html">Haggai</a>
 <a class="animals" href="condensed/Haggai/animals.html">animals</a>
@@ -134,7 +143,7 @@
 <a class="weapons" href="condensed/Haggai/weapons.html">weapons</a>
 <a class="which" href="condensed/Haggai/which.html">which</a>
 </div>
-<button onclick="myFunction('Proverbs 1-15')" class="w3-btn-block w3-left-align">Proverbs 1-15</button>
+<button onclick="myFunction('Proverbs 1-15')" class="w3-btn-block w3-left-align book-btn" title="Tap to see the categories"><span class="book-name">Proverbs 1-15</span><span class="book-count">440 verses</span></button>
 <div id="Proverbs 1-15" class="w3-accordion-content">
 <a href="condensed/Proverbs%201-15/_book.html">Proverbs 1-15</a>
 <a class="animals" href="condensed/Proverbs%201-15/animals.html">animals</a>
@@ -155,7 +164,7 @@
 <a class="weapons" href="condensed/Proverbs%201-15/weapons.html">weapons</a>
 <a class="which" href="condensed/Proverbs%201-15/which.html">which</a>
 </div>
-<button onclick="myFunction('Philippians')" class="w3-btn-block w3-left-align">Philippians</button>
+<button onclick="myFunction('Philippians')" class="w3-btn-block w3-left-align book-btn" title="Tap to see the categories"><span class="book-name">Philippians</span><span class="book-count">104 verses</span></button>
 <div id="Philippians" class="w3-accordion-content">
 <a href="condensed/Philippians/_book.html">Philippians</a>
 <a class="animals" href="condensed/Philippians/animals.html">animals</a>
@@ -178,9 +187,9 @@
 </div>
 </div>
 
-<h2>Combined Books by Divisions</h2>
+<h2>Combined Books by Divisions <span class="w3-tooltip tip-icon" tabindex="0" aria-label="Tip: tap a division to see its categories">&#9432;<span class="w3-text tip-text">Tap a division to see its categories.</span></span></h2>
 <div class="w3-accordion w3-light-grey">
-<button onclick="myFunction('Pre-Juniors')" class="w3-btn-block w3-left-align">Pre-Juniors</button>
+<button onclick="myFunction('Pre-Juniors')" class="w3-btn-block w3-left-align book-btn" title="Tap to see the categories"><span class="book-name">Pre-Juniors</span><span class="book-list">2 Samuel, Acts</span><span class="book-count">1702 verses</span></button>
 <div id="Pre-Juniors" class="w3-accordion-content">
 <a href="condensed/Pre-Juniors/_book.html">Pre-Juniors</a>
 <a class="animals" href="condensed/Pre-Juniors/animals.html">animals</a>
@@ -201,7 +210,7 @@
 <a class="weapons" href="condensed/Pre-Juniors/weapons.html">weapons</a>
 <a class="which" href="condensed/Pre-Juniors/which.html">which</a>
 </div>
-<button onclick="myFunction('Junior Youth')" class="w3-btn-block w3-left-align">Junior Youth</button>
+<button onclick="myFunction('Junior Youth')" class="w3-btn-block w3-left-align book-btn" title="Tap to see the categories"><span class="book-name">Junior Youth</span><span class="book-list">2 Samuel, Acts, Isaiah 1-33, Titus</span><span class="book-count">2397 verses</span></button>
 <div id="Junior Youth" class="w3-accordion-content">
 <a href="condensed/Junior%20Youth/_book.html">Junior Youth</a>
 <a class="animals" href="condensed/Junior%20Youth/animals.html">animals</a>
@@ -222,7 +231,7 @@
 <a class="weapons" href="condensed/Junior%20Youth/weapons.html">weapons</a>
 <a class="which" href="condensed/Junior%20Youth/which.html">which</a>
 </div>
-<button onclick="myFunction('Senior Youth')" class="w3-btn-block w3-left-align">Senior Youth</button>
+<button onclick="myFunction('Senior Youth')" class="w3-btn-block w3-left-align book-btn" title="Tap to see the categories"><span class="book-name">Senior Youth</span><span class="book-list">2 Samuel, Acts, Isaiah 1-33, Titus, Haggai</span><span class="book-count">2435 verses</span></button>
 <div id="Senior Youth" class="w3-accordion-content">
 <a href="condensed/Senior%20Youth/_book.html">Senior Youth</a>
 <a class="animals" href="condensed/Senior%20Youth/animals.html">animals</a>
@@ -243,7 +252,7 @@
 <a class="weapons" href="condensed/Senior%20Youth/weapons.html">weapons</a>
 <a class="which" href="condensed/Senior%20Youth/which.html">which</a>
 </div>
-<button onclick="myFunction('Young Adults')" class="w3-btn-block w3-left-align">Young Adults</button>
+<button onclick="myFunction('Young Adults')" class="w3-btn-block w3-left-align book-btn" title="Tap to see the categories"><span class="book-name">Young Adults</span><span class="book-list">2 Samuel, Acts, Isaiah 1-33, Titus, Haggai, Proverbs 1-15</span><span class="book-count">2875 verses</span></button>
 <div id="Young Adults" class="w3-accordion-content">
 <a href="condensed/Young%20Adults/_book.html">Young Adults</a>
 <a class="animals" href="condensed/Young%20Adults/animals.html">animals</a>
@@ -264,7 +273,7 @@
 <a class="weapons" href="condensed/Young%20Adults/weapons.html">weapons</a>
 <a class="which" href="condensed/Young%20Adults/which.html">which</a>
 </div>
-<button onclick="myFunction('Adults')" class="w3-btn-block w3-left-align">Adults</button>
+<button onclick="myFunction('Adults')" class="w3-btn-block w3-left-align book-btn" title="Tap to see the categories"><span class="book-name">Adults</span><span class="book-list">2 Samuel, Acts, Isaiah 1-33, Titus, Haggai, Proverbs 1-15, Philippians</span><span class="book-count">2979 verses</span></button>
 <div id="Adults" class="w3-accordion-content">
 <a href="condensed/Adults/_book.html">Adults</a>
 <a class="animals" href="condensed/Adults/animals.html">animals</a>
@@ -287,7 +296,9 @@
 </div>
 </div>
 
+
 </div>
+<p class="w3-center"><a href="https://dwongk.github.io/">More sites</a> &middot; <a href="https://github.com/dwongk/dwongk.github.io/discussions">Leave feedback</a></p>
 
 <script>
 function myFunction(id) {
